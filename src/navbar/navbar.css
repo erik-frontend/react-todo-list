@@ -1,0 +1,30 @@
+.items {
+    display: flex;
+    gap: 30px;
+    padding-top: 25px;
+}
+
+@media(max-width:768px){
+    .items{
+        height: 100vh;
+        width: 0;
+        transform: translateX(105%);
+        overflow: hidden;
+        flex-direction: column;
+        position: absolute;
+        z-index: 1;
+        right: 0;
+        top: 0;
+        background: #fff;
+        align-items: center;
+        border-left: 1px solid transparent;
+        padding-top: 150px;
+        transition: .4s linear;
+
+        &.active {
+            width: 60%;
+            transform: translateX(0);
+            border-left-color: #ccc;
+        }
+    }
+}

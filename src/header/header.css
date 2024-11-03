@@ -1,0 +1,33 @@
+.header-top {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .burger {
+        display: none;
+    }
+    
+
+
+    span {
+        padding: 25px 0;
+    }
+}
+
+@media(max-width:768px){
+    .header-top{
+
+        .burger{
+            display: flex;
+            position: relative;
+            z-index: 4;
+
+            svg{
+                width: 60px;
+                height: 40px;
+            }
+        }
+    }
+}

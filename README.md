@@ -1,2 +1,5 @@
-# react-todo-list
-React
+# React + Vite
+npm rum dev запустить проект
+rafce создать базовую структура
+cls очистить терминал
+ctrl + c остановить терминал
